@@ -1,50 +1,37 @@
-# Welcome to your Expo app 👋
+# Projeto de Login e Dashboard em Angular
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta é uma aplicação simples desenvolvida com **Angular 17** para demonstrar um fluxo completo de autenticação de usuário, incluindo uma tela de login com validação, uma página de dashboard protegida e simulação de comunicação com um backend.
 
-## Get started
+## ✨ Funcionalidades
 
-1. Install dependencies
+* **Tela de Login:** Formulário com validação de campos (email e senha).
+* **Dashboard Protegido:** Página acessível apenas para usuários autenticados.
+* **Simulação de Autenticação:** Um serviço (`AuthService`) simula a validação de credenciais.
+* **Rotas Protegidas:** Uso de `CanActivate` (Route Guard) para proteger a rota do dashboard.
+* **Logout:** Funcionalidade para encerrar a sessão do usuário.
 
-   ```bash
-   npm install
-   ```
+## 🚀 Tecnologias Utilizadas
 
-2. Start the app
+* Angular 17
+* TypeScript
+* SCSS para estilização
+* RxJS para programação reativa
 
-   ```bash
-   npx expo start
-   ```
+## ⚙️ Como Executar
 
-In the output, you'll find options to open the app in a
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/Parllon/fokus_parllon.git
+    ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+3.  **Execute a aplicação:**
+    ```bash
+    ng serve
+    ```
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4.  Abra seu navegador e acesse `http://localhost:4200/`.
